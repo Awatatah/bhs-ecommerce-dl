@@ -8,22 +8,10 @@ export class GtmEcommerceDl {
     page: ''
   }
 
-  constructor () {
-    let env: any
-    let isCustomer: boolean
+  constructor (env: string, isCustomer: boolean) {
     this.dataLayer.event = 'sitewide'
 
     try {
-      let envElem = document.querySelector('script[data-id="GtmEcommerceScript"]')
-      if (envElem) {
-        env = envElem.getAttribute('data-environment')
-      }
-      let isCustomerElem = document.querySelector('script[data-id="GtmEcommerceScript"]')
-      if (isCustomerElem) {
-        isCustomer = (isCustomerElem.getAttribute('data-customer') === 'true')
-        this.dataLayer.user = new User(isCustomer).get()
-      }
-
       if ([null, undefined, ''].includes(env)) {
         throw new GtmEcommerceDlError('\'data-environment\' was not provided to the script.')
       } else if (!['development', 'qa', 'staging', 'production'].includes(env)) {
