@@ -12,6 +12,10 @@ export class GtmEcommerceDl {
     this.dataLayer.event = 'sitewide'
 
     try {
+      if (isCustomer) {
+        this.dataLayer.user = new User(isCustomer).get()
+      }
+
       if ([null, undefined, ''].includes(env)) {
         throw new GtmEcommerceDlError('\'data-environment\' was not provided to the script.')
       } else if (!['development', 'qa', 'staging', 'production'].includes(env)) {
