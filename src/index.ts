@@ -1,1 +1,1 @@
-export {sayHello, sayGoodbye} from './classes/hello-world'
+export { GtmEcommerceDl } from './modules/gtm-ecommerce-dl'
