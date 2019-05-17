@@ -1,1 +1,1 @@
-export { GtmEcommerceDl } from './modules/gtm-ecommerce-dl'
+export * from './modules/gtm-ecommerce-dl'
