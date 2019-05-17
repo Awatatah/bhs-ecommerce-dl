@@ -1,0 +1,28 @@
+{
+  "name": "bhs-ecommerce-dl",
+  "version": "1.0.0",
+  "description": "This package is for Brinks GTM Ecommerce datalayer",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Awatatah/bhs-ecommerce-dl.git"
+  },
+  "author": "Juan Laporte",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Awatatah/bhs-ecommerce-dl/issues"
+  },
+  "homepage": "https://github.com/Awatatah/bhs-ecommerce-dl#readme",
+  "devDependencies": {
+    "typescript": "^3.4.5"
+  },
+  "dependencies": {
+    "@types/pluralize": "0.0.29",
+    "pluralize": "^7.0.0"
+  }
+}
