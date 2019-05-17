@@ -2,8 +2,8 @@
   "name": "bhs-ecommerce-dl",
   "version": "1.0.0",
   "description": "This package is for Brinks GTM Ecommerce datalayer",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/gtm-ecommerce-dl.js",
+  "types": "dist/gtm-ecommerce-dl.d.ts",
   "scripts": {
     "prebuild": "rm -rf ./dist && npx tslint --project tsconfig.json --config tslint.json",
     "build": "tsc",

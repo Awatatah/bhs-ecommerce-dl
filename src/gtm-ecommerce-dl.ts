@@ -1,7 +1,7 @@
-import { GtmEcommerceDlError } from '../_services'
-import { User, Page, Ecommerce } from '../models'
+import { GtmEcommerceDlError } from './_services'
+import { User, Page, Ecommerce } from './models'
 
-export class GtmEcommerceDl {
+export default class GtmEcommerceDl {
   dataLayer = {
     event: '',
     user: '',
